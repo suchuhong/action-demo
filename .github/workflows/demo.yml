@@ -24,7 +24,7 @@ jobs:
         npm install 
         npm run build
         touch out/.nojekyll
-        ls out/
+        ls al out/
 
     - name: 部署🚀
       uses: JamesIves/github-pages-deploy-action@v4
