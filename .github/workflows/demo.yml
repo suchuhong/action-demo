@@ -1,6 +1,9 @@
 name: 打包nextjs项目
 on: push
 
+permissions:
+  contents: write
+
 jobs:
   npm-build: 
     name: npm-build工作
@@ -17,7 +20,7 @@ jobs:
       run: npm --version
 
     - name: 安装依赖⏬和项目打包📦
-      run: ｜
+      run: |
         npm install 
         npm run build
 
